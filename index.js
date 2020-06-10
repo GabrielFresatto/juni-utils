@@ -34,13 +34,8 @@ function waitForElement(func, disappear = false, timeout = 100) {
   });
 }
 
-function dev() {
-  console.log("asdasdas");
-}
-
 module.exports = {
   formatCep,
   formatPrice,
   waitForElement,
-  dev,
 };
