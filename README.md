@@ -1,10 +1,12 @@
 # Funções de formatação
 
-Como usar?
+Como installar?
 
 ```shell
 npm i juni-utils ou yarn add juni-utils
 ```
+
+Como usar?
 
 ```js
 const { formatCep } = require("juni-utils");
