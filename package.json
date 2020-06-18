@@ -1,6 +1,6 @@
 {
   "name": "juni-utils",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Pacotes úteis para testes.",
   "main": "index.js",
   "scripts": {
