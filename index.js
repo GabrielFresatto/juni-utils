@@ -58,9 +58,21 @@ function formataWA(str) {
   return novastr;
 }
 
+function elementIsVisible(target, callback, threshold = 1) {
+  var observer = new IntersectionObserver(
+    function (entries) {
+      if (entries[0].isIntersecting === true) callback();
+    },
+    { threshold: [threshold] }
+  );
+
+  observer.observe(target);
+}
+
 module.exports = {
   formatCep,
   formatPrice,
   waitForElement,
   formataWA,
+  elementIsVisible,
 };
