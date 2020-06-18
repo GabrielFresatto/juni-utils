@@ -24,8 +24,9 @@ const { formatCep } = require("juni-utils");
   Formata um texto para o formato de rótulo no GA
 
 - elementIsVisible(target: Element, callback: Function, threshold: number) => void
-  | Parametro | Tipo | Descrição |
-  | ------------------- | ------------------- |
-  | target | Element | Elemento que vai ser monitorado |
-  | callback | Function | Função que vai ser executada quando o elemento estiver na tela |
-  | threshold | Number | Porcentagem que o elemento deve estar na tela pro callback ser executado. Default: 1 |
+
+  | Parametro | Tipo     | Descrição                                                                            |
+  | --------- | -------- | ------------------------------------------------------------------------------------ |
+  | target    | Element  | Elemento que vai ser monitorado                                                      |
+  | callback  | Function | Função que vai ser executada quando o elemento estiver na tela                       |
+  | threshold | Number   | Porcentagem que o elemento deve estar na tela pro callback ser executado. Default: 1 |
