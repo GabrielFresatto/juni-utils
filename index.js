@@ -58,10 +58,14 @@ function formataWA(str) {
   return novastr;
 }
 
-function elementIsVisible(target, callback, threshold = 1) {
+function elementIsVisible(target, callback, callbackNotVisible, threshold = 1) {
   var observer = new IntersectionObserver(
     function (entries) {
-      if (entries[0].isIntersecting === true) callback();
+      if (entries[0].isIntersecting === true) {
+        callback();
+      } else {
+        callbackNotVisible();
+      }
     },
     { threshold: [threshold] }
   );
